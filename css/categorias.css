@@ -1,0 +1,401 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.menu {
+    background-color: black;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    padding: 10px 20px;
+    z-index: 9999;
+    position: fixed;
+
+}
+
+#logo {
+    width: 90px;
+    height: 60px;
+    float: left;
+    border: 2px solid white;
+    border-radius: 20px;
+    
+
+}
+#logo:hover{
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.5);
+    transform: scale(0.9);
+}
+
+#user {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: transform 0.5s;
+    margin-top: -15px;
+
+    
+}
+
+#user:hover {
+    animation: cambia-user 1s linear infinite;
+
+}
+
+@keyframes cambia-user {
+  0% {
+    color: white; border: 1px solid white; transform: scale(1.1);
+  }
+  50% {
+    color: black; border: 1px solid yellow; transform: scale(1.3);
+  }
+  100% {
+    color: white; border: 1px solid white; transform: scale(1.1);
+  }
+}
+
+h1 {  
+    background: linear-gradient(to right, white, yellow) no-repeat;
+    background-size: 0% 3px;
+    background-position: 0 100%;
+    display: inline-block;
+    transition: background-size 0.5s;
+    font-family: fantasy;
+    font-size: 45px;
+    color: white;
+    float: left;
+    margin-left: 3%;
+    font-weight: 100;
+}
+
+h1:hover {
+    background-size: 100% 3px;
+
+}
+
+
+nav {
+    float: right;
+    padding: 10px 10px;
+}
+
+
+
+nav ul li {
+    font-family: "Century Gothic";
+    padding: 10px;
+    margin-left: 5px;
+    list-style: none;
+    float: left;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: padding 0.5s;
+
+}
+
+.cambiacolor:hover {
+    animation: cambia-color 1s linear infinite;
+    border-radius: 10px;
+    padding: 5px 5px;
+    animation-duration: 1s;
+}
+
+
+footer {
+    background-color: black;
+    color: white;
+    padding-top: 15px;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    border: 2px solid red;
+    float: left;
+    bottom: 0;
+}
+
+
+
+@keyframes cambia-color {
+  0% {
+    color: white; border: 1px solid white; letter-spacing: 4px;
+  }
+  50% {
+    color: black; border: 1px solid black; background-color: white; letter-spacing: 4px;
+  }
+  100% {
+    color: white; border: 1px solid white; letter-spacing: 4px;
+  }
+}
+
+body {
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: black;
+}
+
+body video {
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%) translateY(-50%);
+}
+
+
+
+
+.fila {
+    justify-content: center;
+    width: 100%;
+    float: left;
+    display: flex;
+
+
+
+}
+
+.linea {
+    justify-content: center;
+    width: 100%;
+    float: left;
+    height: 100%;
+    margin-top: 80px;
+
+
+
+
+}
+
+
+.categ {
+    height: 450px;
+    background-color: black;
+    text-align: center;
+    border: 1px solid white;
+    min-width: 300px;
+    overflow: hidden;
+    transition: width 0.5s;
+    width: 0;
+    z-index: 1;
+}
+
+.categ p{
+    margin-top: 20px;
+    font-size: 30px;
+    color: white;
+    font-family: fantasy;
+    transition: transform 2s;
+    
+}
+
+
+
+.categ:hover {
+    width: 97.5%;
+}
+
+.categ:hover p{ 
+    transform: translateY(30px);
+    text-shadow: 
+    1px -1px 1px black,
+    1px -1px 1px black,
+    -1px 1px 1px black,
+    -1px 1px 1px black;
+    background-color: rgba(0,0,0,0.5);
+
+}
+
+#categ1 {
+    z-index: 1;
+    background-image: url(https://pics.filmaffinity.com/Top_Gun_Maverick-733802541-large.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#categ2 {
+    z-index: 1;
+    background-image: url(https://pics.filmaffinity.com/Avatar_El_sentido_del_agua-722646748-large.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#categ3 {
+    z-index: 1;
+    background-image: url(https://los40.com/los40/imagenes/2018/10/29/album/1540826301_513913_1572003221_album_normal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#categ4 {
+    z-index: 1;
+    background-image: url(https://www.lavanguardia.com/peliculas-series/images/movie/poster/2009/6/w1280/rqeim09TdaflSvPNVnCTBjUHlKu.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#categ5 {
+    z-index: 1;
+    background-image: url(https://m.media-amazon.com/images/I/81Q+FZpxj4L._AC_SL1500_.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#vertical {
+    right: 0;
+    float: right;
+    margin-top: 80px;
+    position: absolute;
+    height: 2250px;
+    border: 1px solid white;
+    min-width: 50px;
+    overflow: hidden;
+    transition: width 0.5s;
+    width: 0;
+}
+
+#vertical p {
+    color: white;
+    font-size: 180px;
+    font-family: fantasy;
+    position: absolute;
+    padding: 150px 200px;
+    text-align: center;
+}
+
+
+
+
+#vertical .verticalizq {
+    left: 0;
+    top: 0;
+    position: absolute;
+    height: 2250px;
+    min-width: 50px;
+    background-color: black;
+    justify-content: center;
+    align-content: center;
+}
+
+.verticalizq img {
+    padding: 1px 1px;
+    margin-left: 5px;
+    position: relative;
+    width: 35px;
+    height: 35px;
+    transform: translateY(440px);
+    background-color: white;
+    border-radius: 50%;
+
+}
+
+
+#vertical:hover {
+    width: 84%;
+}
+
+#vertical video {
+    position: relative;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -10;
+    top: 100;
+    right: 100;
+
+}
+
+#vertical:hover #pelis{
+    transform: translateY(-300px);
+}
+
+#pelis {
+    
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    background-color: rgba(0,0,0,0.7);
+    bottom: 0;
+    text-align: center;
+    padding: 125px 100px;
+    
+}
+
+.vuelta:hover {
+        animation: movimiento 1s linear infinite;
+
+}
+
+
+
+
+.vuelta a {
+    padding: 15px 15px;
+    border-radius: 35%;
+    text-decoration: none;
+    color: white;
+    font-size: 50px;
+    border: 2px solid white;
+    font-family: fantasy;
+
+    
+}
+
+.vuelta {
+    border-radius: 15%;
+    width: 200px;
+    width: 200px;
+    margin: 0 auto;
+    transition: transform 1s;
+    transform: rotate(0deg);
+    transform-origin: center center;
+    background-color: transparent;
+
+}
+
+
+@keyframes movimiento {
+  0% {
+  transform: rotate(0deg) scale(1.0);
+  }
+  20% {
+  transform: rotate(10deg) scale(1.2);
+}
+  40% {
+  transform: rotate(0deg) scale(1.5);
+}
+  80% {
+  transform: rotate(-10deg) scale(1.2);
+}
+  100% {
+  transform: rotate(0deg) scale(1.0);
+}
+}
+
+
+
+.bloque {
+    width: 250px;
+    height: 300px;
+    margin: 63px;
+    background-color: black;
+
+}
+
+.bloque:hover {
+    border: 2px solid white;
+}
+
+
+.bloque .imagen {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+}

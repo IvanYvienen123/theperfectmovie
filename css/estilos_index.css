@@ -1,0 +1,381 @@
+/*HEADER Y NAV QUE TIENEN QUE SER IGUALES EN TODAS LAS PÁGINAS*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.menu {
+    background-color: black;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    padding: 10px 20px;
+    z-index: 9999;
+    position: fixed;
+
+}
+
+#logo {
+    width: 90px;
+    height: 60px;
+    float: left;
+    border: 2px solid white;
+    border-radius: 20px;
+    
+
+}
+#logo:hover{
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.5);
+    transform: scale(0.9);
+}
+
+#user {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: transform 0.5s;
+    margin-top: -15px;
+    color: 
+
+    
+}
+
+#user:hover {
+    animation: cambia-user 1s linear infinite;
+
+}
+
+@keyframes cambia-user {
+  0% {
+    color: white; border: 1px solid white; transform: scale(1.1);
+  }
+  50% {
+    color: black; border: 1px solid yellow; transform: scale(1.3);
+  }
+  100% {
+    color: white; border: 1px solid white; transform: scale(1.1);
+  }
+}
+
+h1 {  
+    background: linear-gradient(to right, white, yellow) no-repeat;
+    background-size: 0% 3px;
+    background-position: 0 100%;
+    display: inline-block;
+    transition: background-size 0.5s;
+    font-family: fantasy;
+    font-size: 45px;
+    color: white;
+    float: left;
+    margin-left: 3%;
+    font-weight: 100;
+}
+
+h1:hover {
+    background-size: 100% 3px;
+
+}
+
+
+nav {
+    float: right;
+    padding: 10px 10px;
+}
+
+
+
+nav ul li {
+    font-family: "Century Gothic";
+    padding: 10px;
+    margin-left: 5px;
+    list-style: none;
+    float: left;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: padding 0.5s;
+
+}
+
+.cambiacolor:hover {
+    animation: cambia-color 1s linear infinite;
+    border-radius: 10px;
+    padding: 5px 5px;
+}
+
+
+footer {
+    background-color: black;
+    color: white;
+    padding-top: 15px;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    border: 2px solid red;
+    float: left;
+    bottom: 0;
+}
+
+
+
+@keyframes cambia-color {
+  0% {
+    color: white; border: 1px solid white; letter-spacing: 4px;
+  }
+  50% {
+    color: black; border: 1px solid black; background-color: white; 
+    letter-spacing: 4px;
+  }
+  100% {
+    color: white; border: 1px solid white; letter-spacing: 4px;
+  }
+}
+
+body {
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: black;
+}
+
+body video {
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%) translateY(-50%);
+}
+
+/*INFO GENERAL*/
+
+#contenedor {
+padding: 125px 100px;
+z-index: 1;
+float: left;
+
+
+}
+
+.mostrar {
+    height:400px;
+    width: 750px;
+    background-color: white;
+    transition: transform 0.5s;
+    margin-top: 5%;
+    float: left;
+    z-index: 1;
+}
+
+ .mostrar:hover {
+    transition-duration: 2s;
+    transform: scale(0.95) rotateY(-180deg);
+    box-shadow: 0 0 20px lightyellow, 0 0 20px lightyellow, 0 0 20px lightyellow, 0 0 20px lightyellow;
+}   
+
+    
+
+.texto {
+    height:400px;
+    width: 750px;
+    margin-top: 5%;
+    float: left;
+    font-family: fantasy;
+    letter-spacing: 5px;
+    font-size: 70px;
+    font-weight: bold;
+    background: linear-gradient(to right, white, yellow) no-repeat;
+    background-size: 0% 10px;
+    background-position: 100% 100%;
+    display: inline-block;
+    transition: background-size 0.5s;
+    font-weight: 100;
+
+}
+.texto p {
+    padding: 5px 5px;
+    color: white;
+}
+
+.texto:hover {
+    background-size: 100% 10px;
+}
+
+   
+
+#bloque1 {
+    background-image: url(https://i.pinimg.com/originals/7d/c2/c8/7dc2c88c47f8a97d3a739c4c3c367b24.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+    
+
+
+#bloque2 {
+    margin-left: 100px;
+    padding-top: 20px;
+
+
+}
+
+#bloque3 {
+    margin-right: 100px;
+    padding-top: 30px;
+}
+
+#bloque4 {
+    background-image: url(https://images7.alphacoders.com/129/thumb-1920-1299920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+#bloque5 {
+    background-image: url(https://images2.alphacoders.com/618/618328.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+#bloque6 {
+ margin-left: 100px;
+    padding-top: 10px;
+}
+
+
+#logfondo {
+    float: left;
+    width: 100%;
+    background-image: url(https://thumbs.dreamstime.com/b/textura-negra-del-fondo-de-la-pared-ladrillo-100976695.jpg)
+}
+
+
+
+#soc1 {
+    width: 100px;
+    position: absolute;
+    padding: 100px 200px 50px;
+    float: left;
+
+}
+
+#soc1 img{
+    width: 100px;
+    height: 100px;
+    border-radius: 25%;
+    margin-bottom: 20px;
+    border: 3px solid black;
+    transition: transform 0.5s ease-in-out;
+    transform: rotate(0deg);
+    transform-origin: center center;
+    
+
+}
+
+#soc2 {
+    width: 100px;
+    float: right;
+    margin-right: 200px;
+    margin-top: 100px;
+
+    
+}
+
+#soc2 img{
+
+    width: 100px;
+    height: 100px;
+    border-radius: 25%;
+    margin-bottom: 20px;
+    border: 3px solid black;
+    transition: transform 0.5s ease-in-out;
+    transform: rotate(0deg);
+    transform-origin: center center;
+    
+}
+
+#soc2 img:hover {
+  animation: movimiento 1s linear infinite;
+}
+
+
+#soc1 img:hover {
+  animation: movimiento 1s linear infinite;
+}
+
+
+@keyframes movimiento {
+  0% {
+  transform: translateX(0px) rotate(0deg);
+  }
+  20% {
+  transform: translateX(20px) rotate(10deg);
+}
+  40% {
+  transform: translateX(0px) rotate(0deg);
+}
+  80% {
+  transform: translateX(-20px) rotate(-10deg);
+}
+  100% {
+  transform: translateX(0px) rotate(0deg);
+}
+}
+
+#log {
+    margin-left: 28%;
+    float: left;
+    width: 800px;
+    height: 400px;
+    padding: 50px 50px;
+    border-radius: 30%;
+    border: 5px solid grey;
+    background-image: url(https://images4.alphacoders.com/610/610219.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+#log p{
+    margin-top: 20px;
+    font-size: 40px;
+    font-family: monospace;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    text-shadow: 
+    -8px -5px 2px black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;
+}
+
+#log b{
+    padding: 0px 45px;
+    width: 45%;
+    display: flex;
+    margin: 10% 29%;
+    transition: transform 0.5s;
+    border: 1px solid white;
+    border-radius: 5%;
+    color: white;
+    background-color: black;
+}
+
+#log a {
+    text-decoration: none;
+}
+
+#log b:hover{
+    transform: scale(1.5);
+    border: 3px solid white;
+    color: yellow;
+}
